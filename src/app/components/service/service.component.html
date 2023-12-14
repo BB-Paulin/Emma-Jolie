@@ -1,0 +1,22 @@
+<div *ngFor="let service of services">
+    <div class="container">
+        <h2>{{ service.title }}</h2>
+        <p> environ: {{ service.duration }}min</p>
+        <p>Tarif : {{ service.price }} €</p>
+        <button (click)="toggleDetails(service)">
+            <img *ngIf="!service.isDetailsVisible" src="assets/SVG/arrow-down.svg" alt="">
+            <img *ngIf="service.isDetailsVisible" src="assets/SVG/arrow-up.svg" alt="">
+        </button>
+    </div>
+    <div class="details" *ngIf="service.isDetailsVisible">
+        <div class="img" *ngIf="service.before">
+            <p>Avant :</p>
+            <img src="{{ service.before }}" alt="">
+        </div>
+            <p>{{ service.description }}</p>
+        <div class="img" *ngIf="service.after">
+            <p>Après :</p>
+            <img src="{{ service.after }}" alt="">  
+        </div>
+    </div>
+  </div>

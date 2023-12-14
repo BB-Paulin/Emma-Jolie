@@ -6,7 +6,7 @@ section {
     width: 100%;
     border-radius: 10px;
 
-    &.first,&.second,&.third,&.calendar_container {
+    &.first,&.second,&.third{
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
     };
@@ -92,41 +92,43 @@ section {
           border-radius: 50px;
           border: 2px solid var(--secondary-brown);
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
         }
       }
     }
 
-    &.calendar_container {
+    div.services_container {
       background-image: linear-gradient(to bottom, var(--secondary-brown), var(--optional-brown));
       height: 900px;
       display: flex;
       justify-content: center;
       align-items: center;
 
-      div.calendar {
+      div.services {
         background-color: var(--main-white);
         height: 800px;
         width: 90%;
         border-radius: 10px;
-        box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
       }
 
     }
 
     h1 {
-      font-weight: 800;
-      font-size: 50px;
+      font-weight: 900;
+      font-size: 100px;
+      font-family: 'Better Saturday', sans-serif;
     }
 
     h2 {
-      font-weight: 600;
+      font-weight: 900;
       font-size: 40px;
+      font-family: 'Better Saturday', sans-serif;
+      margin: 0;
     }
 
     h3 {
-      font-weight: 600;
-      font-size: 30px;
+      font-weight: 700;
+      font-size: 40px;
+      font-family: 'Better Saturday', sans-serif;
     }
   }
 }

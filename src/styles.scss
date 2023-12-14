@@ -44,6 +44,20 @@
   --main-info: #2283f6;
   --secondary-info: #0e5bbf;
 
+  // FONTS
+  @font-face {
+    font-family: 'Better Saturday';
+    src: url('/assets/fonts/Better Saturday.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Glacial Indifference';
+    src: url('/assets/fonts/GlacialIndifference-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
 }
 
 html {
@@ -54,7 +68,7 @@ html {
 body {
   margin: 0;
   height: 100%;
-  font-family: 'Noto Sans Duployan', sans-serif;
+  font-family: 'Glacial Indifference', sans-serif;
   background-color: var(--secondary-bg);
   // background-color: var(--red);
 }
@@ -264,35 +278,5 @@ section {
   }
 
 
-}
-
-// exceptions
-
-.emoji-mart-dark {
-  color: var(--main-white) !important;
-  background-color: var(--secondary-bg) !important;
-  border: none !important;
-}
-
-.emoji-mart-search input {
-  color: var(--main-white) !important;
-  background-color: var(--main-bg) !important;
-}
-
-.emoji-mart-search input::placeholder {
-  color: var(--main-light-gray) !important;
-}
-
-.emoji-mart-anchor-selected, {
-  color: var(--main-info) !important;
-}
-.emoji-mart-anchor {
-  &:hover {
-    cursor: pointer;
-  }
-}
-
-.emoji-mart-anchor-bar {
-  background-color: var(--main-info) !important;
 }
 
